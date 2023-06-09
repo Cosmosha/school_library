@@ -37,6 +37,17 @@
   </ul>
 </details>
 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[Add Person, Student and Teacher]**
+- **[Rent out Book base on Permission]**
+- **[Use Decorator Design Pattern]**
+- **[Perserve Data]**
+
+<p align="right"><a href="#readme-top">👆</a></p>
+
 <!-- Getting Started -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
