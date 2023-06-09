@@ -12,13 +12,16 @@ class Person < Nameable
   end
 
   def can_use_services?
-    # return true if @parent_permission == true || of_age?
     of_age? || @parent_permission
     false
   end
 
   def correct_name
     @name
+  end
+
+  def add_rental(rental)
+    @rentals << rental
   end
 
   private
