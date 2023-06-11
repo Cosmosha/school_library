@@ -3,6 +3,7 @@ require './student'
 require './rental'
 require './classroom'
 require './teacher'
+require './book'
 
 class App
   def initialize
@@ -59,7 +60,7 @@ class App
     puts 'Please enter Age: '
     age = gets.chomp.to_i
     puts 'Had Parent Permission? [Y/N]: '
-    parent_permission = gets.chomp.downcase
+    parent_permission = gets.chomp
     case parent_permission
     when 'y'
       student = Student.new(age, name, parent_permission: true)
@@ -95,7 +96,7 @@ class App
     puts 'Please enter Book Author: '
     author = gets.chomp
     book = Book.new(title, author)
-    @book.push(book)
+    @books.push(book)
     puts "Book #{title} added successfully"
   end
 
