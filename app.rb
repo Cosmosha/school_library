@@ -101,19 +101,19 @@ class App
 
   def add_rentals
     puts 'Which Book do you want to rent? Please select the ID'
-    @books.each_with_index{ |book, index| puts "#{index}. Title: #{book.title}, Author: #{book.author}" }
+    @books.each_with_index { |book, index| puts "#{index}. Title: #{book.title}, Author: #{book.author}" }
 
-    book_Id = gets.chomp.to_i
+    book_id = gets.chomp.to_i
 
     puts 'Please select the ID of the person requesting the rent'
-    @persons.each_with_index{ |person, index| puts "#{index}. Name: #{perosn.name}, Age: #{person.age}" }
+    @persons.each_with_index { |person, index| puts "#{index}. Name: #{perosn.name}, Age: #{person.age}" }
 
-    person_Id = get.chomp.to_i
+    person_id = get.chomp.to_i
 
     puts 'Please enter Date: '
     date = gets.chomp.to_s
 
-    rental = Rental.new(date, @person[person_Id], @books[book_Id])
+    rental = Rental.new(date, @person[person_id], @books[book_id])
     @rentals << rental
 
     puts 'Rental Added Successfully'
@@ -122,7 +122,7 @@ class App
   def list_rentals
     puts 'Rental list is empty. Please Add a Rental to list' if @rentals.empty?
     puts 'Please enter a Rental ID: '
-    @persons.each { |person| puts "ID: #{person.id}, Name:#{person.name}"}
+    @persons.each { |person| puts "ID: #{person.id}, Name:#{person.name}" }
 
     id = gets.chomp.to_i
     puts 'Books Rented'
