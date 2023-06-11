@@ -107,14 +107,14 @@ class App
     book_id = gets.chomp.to_i
 
     puts 'Please select the ID of the person requesting the rent'
-    @persons.each_with_index { |person, index| puts "#{index}. Name: #{perosn.name}, Age: #{person.age}" }
+    @persons.each_with_index { |person, index| puts "#{index}. Name: #{person.name}, Age: #{person.age}" }
 
-    person_id = get.chomp.to_i
+    person_id = gets.chomp.to_i
 
     puts 'Please enter Date: '
     date = gets.chomp.to_s
 
-    rental = Rental.new(date, @person[person_id], @books[book_id])
+    rental = Rental.new(date, @persons[person_id], @books[book_id])
     @rentals << rental
 
     puts 'Rental Added Successfully'
